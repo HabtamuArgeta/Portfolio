@@ -29,24 +29,39 @@
     <noscript>You need to enable javascript to run this application !</noscript>
     <div class="w3-row-padding">
      <!--Here is code for side bar-->   
-    <div class="w3-sidebar w3-bar-block w3-white " style="display: block;width: 20%;">
-        <div class="w3-center w3-margin-top">
+    <div id="sideBar" class="w3-sidebar w3-bar-block w3-white w3-display-container w3-animate-left w3-card-4 " style="display: block;width: 20%;">
+      <span class="w3-button w3-blue-gray w3-display-topright" style="margin:3px;" onclick="closeMe()">&times;</span>
+        <div class="w3-center" style="margin-top: 45px;">
             <img src="IMAGES/IMG_20230505_090741.jpg" alt="Habtamu Argeta" style="width: 85%;">
             <div class="w3-wide w3-xlarge " style="font-family: 'Times New Roman', Times, serif;">HABTAMU</div>
         </div>
-        <a href="#goToPortfolio" class="w3-button w3-bar-item"><i></i><i class="fa fa-th-large fa-fw w3-margin-right"></i>Portfolio</a>
+        <a href="#goToMe" class="w3-button w3-bar-item"><i class="fas fa-images w3-margin-right"></i>Me</a>
         <a href="#goToAboutMe" class="w3-button w3-bar-item"><i class="fa fa-user fa-fw w3-margin-right"></i>About</a>
+        <a href="#goToProject" class="w3-button w3-bar-item"><i class="fas fa-folder fa-fw w3-margin-right"></i>Projects</a>
         <a href="#goToContact" class="w3-button w3-bar-item"><i class="fa fa-envelope fa-fw w3-margin-right"></i>Contact</a>
     </div>
 
     <!--Here is code for body-->
-    <div class="w3-light-gray w3-margin-top w3-container" style="margin-left: 20.3%;">
-      <a id="goToPortfolio"></a>
-       <div class="w3-text-dark-grey w3-wide w3-xxlarge">MY PORTFOLIO</div><br>
+    <div class="w3-center moveLR" style="margin-left:20.3%;">
+        <div class="w3-bar w3-light-gray w3-top" id="topBar" style="display: none; width: 100%;">
+        <a class="w3-button w3-bar-item w3-xlarge w3-margin-right"  onclick="openMe()"><b>&#9776;</b></a>
+        <a href="#goToMe" class="w3-button w3-bar-item w3-xlarge w3-hide-small"><i class="fas fa-images" style="margin-right: 5px;"></i>Me</a>
+        <a href="#goToAboutMe" class="w3-button w3-bar-item w3-xlarge w3-hide-small">About</a>
+        <a href="#goToProject" class="w3-button w3-bar-item w3-xlarge w3-hide-small">Projects</a>
+        <a href="#goToContact" class="w3-button w3-bar-item w3-xlarge w3-hide-small">Contact</a>
+        </div>
+         <div class="w3-wide w3-xxxlarge" style="margin-top: 70px;" >HABTAMU ARGETA </div>
+         <div class="w3-wide">Web designer and Project manager</div>
+         <div><img src="https://media.giphy.com/media/QaMcXSekUWx7aogAUr/giphy.gif" width="300px" height="150px" title="My Blog being prepared"/>&nbsp</div> 
+    </div>
+    <div class="w3-light-gray w3-margin-top w3-container moveLR" style="margin-left:20.3%;">
+      
+      <a id="goToMe"></a>
+       <div class="w3-text-dark-grey w3-wide w3-xxlarge w3-center">MY PORTFOLIO</div><br>
        <div class="w3-row-padding w3-animate-left imgCont" style="display: none;">
         <div class="w3-col l4 m4" ><img src="IMAGES/IMG_20230208_133451.jpg"   alt="This is at saba dorm in 2023" style=" width: 100%; cursor: zoom-in;" onclick="showOnModal(this)" ></div>
         <div class="w3-col l4 m4" ><img src="IMAGES/IMG_20230902_155542_086 (2).jpg"   alt="This is at Hanna's house in Augest 2023(Ethiopian new year)" style="width: 100%; cursor: zoom-in;" onclick="showOnModal(this)"></div>
-        <div class="w3-col l4 m4"><img src="IMAGES/IMG_20230821_153045_395.jpg" alt="This is at my uncle Tarkegn's house in Augest 2023" style="width: 100%;cursor: zoom-in;" onclick="showOnModal(this)"></div>
+        <div class="w3-col l4 m4"><img src="IMAGES/272915524_142175734918993_8165490164117241879_n.jpg" alt="Infront of Our class In AAU in April 2023" style="width: 100%;cursor: zoom-in;" onclick="showOnModal(this)"></div>
        </div>
        <div class="w3-row-padding w3-animate-zoom imgCont" style="display: none;">
         <div class="w3-col l4 m4"><img src="IMAGES/IMG_20221207_125906.jpg" alt="At AAU infront of liberary in November 2023" style="width: 100%;cursor: zoom-in;" onclick="showOnModal(this)"></div>
@@ -54,23 +69,18 @@
         <div class="w3-col l4 m4"><img src="IMAGES/IMG_20230912_110823_424.jpg" alt="This is at Hanna's house in Augest 2023(Ethiopian new year)" style="width: 100%;cursor: zoom-in;" onclick="showOnModal(this)"></div>
     </div>
     <div class="w3-row-padding w3-animate-zoom imgCont" style="display: none;">
-      <div class="w3-col l4 m4" ><img src="IMAGES/IMG_20230909_131934_726.jpg"   alt="At my dad's house in Augest 2023" style="width: 100%; cursor: zoom-in;" onclick="showOnModal(this)"></div>
+       <div class="w3-col l4 m4"><img src="IMAGES/272990343_142175704918996_8463131463694318028_n.jpg" alt="At 6-killo Compus in Augest 2021" style="width: 100%;cursor: zoom-in;" onclick="showOnModal(this)"></div>
       <div class="w3-col l4 m4"><img src="IMAGES/IMG_20230130_180326.jpg" alt="At saba dorm(AAU) in 2023" style="width: 100%;cursor: zoom-in;" onclick="showOnModal(this)"></div>
       <div class="w3-col l4 m4"><img src="IMAGES/IMG_20230811_074629_445~2(0).jpg" alt="Infront of  my dad's house in Augest 2023" style="width: 100%;cursor: zoom-in;" onclick="showOnModal(this)"></div>
     </div>
     <div class="w3-row-padding w3-animate-top imgCont" style="display: none;">
         <div class="w3-col l4 m4"><img src="IMAGES/IMG_20230403_084926.jpg" alt="Infront of Our class In AAU in April 2023" style="width: 100%;cursor: zoom-in;" onclick="showOnModal(this)"></div>
         <div class="w3-col l4 m4"><img src="IMAGES/IMG_20230918_121538.jpg" alt="At Bahirdar Airport my first flight in 18 september 2023" style="width: 100%;cursor: zoom-in;" onclick="showOnModal(this)"></div>
-        <div class="w3-col l4 m4"><img src="IMAGES/IMG_20230505_090741.jpg" alt="At ABROHOT liiberary in 2023" style="width: 100%;cursor: zoom-in;" onclick="showOnModal(this)"></div>
+        <div class="w3-col l4 m4"><img src="IMAGES/IMG_20230811_074629_445~2(0).jpg" alt="At ABROHOT liiberary in 2023" style="width: 100%;cursor: zoom-in;" onclick="showOnModal(this)"></div>
     </div>
     <div class="w3-row-padding w3-animate-zoom imgCont" style="display: none;">
         <div class="w3-col l4 m4"><img src="IMAGES/IMG_20230902_155751_791.jpg" alt="This is at Hanna's house in Augest 2023(Ethiopian new year)" style="width: 100%;cursor: zoom-in;" onclick="showOnModal(this)"></div>
         <div class="w3-col l4 m4"><img src="IMAGES/IMG_20230828_092438_572.jpg" alt="At my dad's house in Augest 2022" style="width: 100%;cursor: zoom-in;" onclick="showOnModal(this)"></div>
-        <div class="w3-col l4 m4"><img src="IMAGES/IMG_20230321_112424.jpg" alt="At 4-killo science liberary in April 2023" style="width: 100%;cursor: zoom-in;" onclick="showOnModal(this)"></div>
-    </div>
-    <div class="w3-row-padding w3-animate-right imgCont" style="display: none;">
-        <div class="w3-col l4 m4"><img src="IMAGES/272915524_142175734918993_8165490164117241879_n.jpg" alt="At 6-killo Compus in Augest 2021" style="width: 100%;cursor: zoom-in;" onclick="showOnModal(this)"></div>
-        <div class="w3-col l4 m4"><img src="IMAGES/272990343_142175704918996_8463131463694318028_n.jpg" alt="At 6-killo Compus in Augest 2021" style="width: 100%;cursor: zoom-in;" onclick="showOnModal(this)"></div>
         <div class="w3-col l4 m4"><img src="IMAGES/273146483_142175561585677_4411064220941036243_n.jpg" alt="At 6-killo Compus in Augest 2021" style="width: 100%;cursor: zoom-in;" onclick="showOnModal(this)"></div>
     </div>
 
@@ -81,7 +91,6 @@
         <a onclick="showHidden(3)" class="w3-bar-item w3-button pignBtn">3</a>
         <a onclick="showHidden(4)" class="w3-bar-item w3-button pignBtn">4</a>
         <a onclick="showHidden(5)" class="w3-bar-item w3-button pignBtn">5</a>
-        <a onclick="showHidden(6)" class="w3-bar-item w3-button pignBtn">6</a>
         <a onclick="change(1)" class="w3-bar-item w3-button w3-hover-blue-gray w3-padding">»</a>
        </div>
 
@@ -124,34 +133,44 @@
             <hr>
             <div class="w3-xxlarge w3-wide">Technical Skills</div><br>
             <div class="w3-xlarge w3-wide">Web design</div>
-            <div class="w3-light-gray w3-round-medium" style="width: 700px;height: 25px;"><div class="w3-teal w3-center w3-round-medium" style="width: 80%;height: 100%;">80%</div></div><br>
+            <div class="w3-light-gray w3-round-medium" style="max-width: 700px;height: 25px;"><div class="w3-teal w3-center w3-round-medium" style="width: 80%;height: 100%;">80%</div></div><br>
+            <div class="w3-xlarge w3-wide">Wordpress for CMS</div>
+            <div class="w3-light-gray w3-round-medium " style="max-width: 700px;height: 25px;"><div class="w3-teal w3-center w3-round-medium" style="width: 90%;height: 100%;">90%</div></div><br>
             <div class="w3-xlarge w3-wide">Jave development</div>
-            <div class="w3-light-gray w3-round-medium" style="width: 700px;height: 25px;"><div class="w3-teal w3-center w3-round-medium" style="width: 70%;height: 100%;">70%</div></div><br>
+            <div class="w3-light-gray w3-round-medium" style="max-width: 700px;height: 25px;"><div class="w3-teal w3-center w3-round-medium" style="width: 70%;height: 100%;">70%</div></div><br>
             <div class="w3-xlarge w3-wide">Agile Project management</div>
-            <div class="w3-light-gray w3-round-medium " style="width: 700px;height: 25px;"><div class="w3-teal w3-center w3-round-medium" style="width: 55%;height: 100%;">55%</div></div><br>
+            <div class="w3-light-gray w3-round-medium " style="max-width: 700px;height: 25px;"><div class="w3-teal w3-center w3-round-medium" style="width: 55%;height: 100%;">55%</div></div><br>
             <a class="w3-pale-blue w3-button" href="./MYCV.pdf" download><i class="fa fa-download w3-margin-right"></i>Download Resum</a>
             <hr>
             <div class="w3-wide w3-xlarge">How much I charge ?</div>
             <div class="w3-row-padding" id="chargeTable">
               <table class="w3-table-all w3-col l5 m5 s12 w3-margin-right w3-card w3-white">
                <tr ><th class="w3-padding-32 w3-black  w3-xlarge">Basic</th></tr>
-               <tr><td>Front-end web dev't</td></tr>
+               <tr><td>Full-stack web dev't</td></tr>
+               <tr><td>Wordpress</td></tr>
                <tr><td>Java app dev't</td></tr>
                <tr><td>Agile Project dev't</td></tr>
                <tr><td>$5 <br>per hour</td></tr>
-               <tr><td class="w3-padding-24"><a class="w3-button">Sign Up</a></td></tr>
+               <tr><td style="height: 40px;"></td></tr>
              </table>
              <table class="w3-table-all w3-col l5 m5 s12  w3-card w3-white ">
                <tr><th class="w3-padding-32 w3-black  w3-xlarge">Pro</th></tr>
                <tr><td>Full-stack web dev't</td></tr>
+               <tr><td>Wordpress</td></tr>
                <tr><td>Java app dev't</td></tr>
                <tr><td>Agile Project dev't</td></tr>
-               <tr><td>$15 <br>per hour</td></tr>
-               <tr><td class="w3-padding-24"><a class="w3-button">Sign Up</a></td></tr>
+               <tr><td>Git version control</td></tr>
+               <tr><td>$7 <br>per hour</td></tr>
              </table>
            </div>
          </div>
      </div>
+      
+     <a id="goToProject"></a>
+     <div>
+
+     </div>
+
      <a id="goToContact"></a>
      <div class="w3-center w3-margin-top w3-margin-bottom">
       <div class="w3-wide w3-xlarge">Contact Me</div>
@@ -160,30 +179,32 @@
            it with in short priode of time.Am also in love to contact new person,
            have pleasure  by sending your message !!</em>
            <hr style="background-color: black; height: 1px;"><br>
-           <form>
-              <label>Full Name</label><br>
-              <input class="w3-input" type="text"><br><br>
-              <labe>Email</labe><br>
-              <input class="w3-input" type="email"><br><br>
-              <label>Message</label><br>
-              <input class="w3-input" type="text"><br>
-              <input class="w3-blue-gray w3-block" type="submit" value="Send Message">
-           </form>
+           <div class="w3-wide w3-xlarge">Contact Me Via</div>
+           <div class="w3-row-padding w3-margin-bottom">
+             <div class="w3-col l4 m4 s4"><a target="_blank" href="https://www.facebook.com/profile.php?id=100073797025608"  title="Facbook"><i class="fa fa-facebook-official w3-hover-opacity w3-xlarge"></i></a></div>
+             <div class="w3-col l4 m4 s4"><a target="_blank" href="#"  title="Instagram"><i class="fa fa-instagram w3-hover-opacity w3-xlarge"></i></a></div>
+             <div class="w3-col l4 m4 s4"><a target="_blank" href="https://github.com/HabtamuArgeta"  title="Github"><i class="fa fa-github w3-hover-opacity w3-xlarge"></i></a></div>
+          </div>
+          <div class="w3-row-padding w3-margin-bottom">
+            <div class="w3-col l4 m4 s4"><a target="_blank" href="mailto:habtamuargeta6@gmail.com"  title="Gmail"><i class="fas fa-envelope w3-hover-opacity w3-xlarge"></i></a></div>
+            <div class="w3-col l4 m4 s4"><a target="_blank" href="tel:+251901063544"  title="Phone"><i class="fa fa-phone w3-hover-opacity w3-xlarge" ></i></a></div>
+            <div class="w3-col l4 m4 s4"><a target="_blank" href="https://www.linkedin.com/in/habtamu-argeta-671a93240/"  title="Linkedin"><i class="fa fa-linkedin w3-hover-opacity w3-xlarge"></i></a></div>
+          </div>
         </div>
      </div>
     </div>
-    <footer class="w3-black w3-center w3-padding-16" style="margin-left: 20.3%;">
-      <div class="w3-wide w3-xlarge">More Contact</div>
+    <footer class="w3-black w3-center w3-padding-16 moveLR" style="margin-left:20.3%;">
+      
       <div class="w3-row-padding w3-margin-bottom">
-        <div class="w3-col l4 m4 s4"><a target="_blank" href="https://www.facebook.com/profile.php?id=100073797025608"  title="Facbook"><i class="fa fa-facebook-official w3-hover-opacity"></i></a></div>
-        <div class="w3-col l4 m4 s4"><a target="_blank" href="#"  title="Instagram"><i class="fa fa-instagram w3-hover-opacity"></i></a></div>
-        <div class="w3-col l4 m4 s4"><a target="_blank" href="https://github.com/HabtamuArgeta"  title="Github"><i class="fa fa-github w3-hover-opacity"></i></a></div>
-     </div>
-     <div class="w3-row-padding w3-margin-bottom">
-         <div class="w3-col l4 m4 s4"><a target="_blank" href="mailto:habtamuargeta6@gmail.com"  title="Gmail"><i class="fas fa-envelope w3-hover-opacity"></i></a></div>
-         <div class="w3-col l4 m4 s4"><a target="_blank" href="tel:+251901063544"  title="Phone"><i class="fa fa-phone w3-hover-opacity"></i></a></div>
-         <div class="w3-col l4 m4 s4"><a target="_blank" href="https://www.linkedin.com/in/habtamu-argeta-671a93240/"  title="Linkedin"><i class="fa fa-linkedin w3-hover-opacity"></i></a></div>
-     </div>
+         <div class="w3-col l5 m5 s5"><a href="#goToMe" style="text-decoration: none;"><i class="fas fa-images " style="margin-right: 5px;"></i>Me</a></div>
+         <div class="w3-col l5 m5 s5"><a href="#goToAboutMe" style="text-decoration: none;">About Me</a></div>
+      </div>
+      <div class="w3-row-padding">
+         <div class="w3-col l5 m5 s5"><a href="#goToProject" style="text-decoration: none;">Projects</a></div>
+         <div class="w3-col l5 m5 s5"><a href="#goToContact" style="text-decoration: none;">Contact Me</a></div>
+      </div>
+      <br>
+      <div>&copy;<em>Habtamu Argeta.All right reserved.</em></div>
     </footer>
 
      <!--Modal contents are coded here -->
@@ -211,8 +232,8 @@
 
      function change(value){
         numOfAlbum = numOfAlbum + value;
-        if(numOfAlbum < 1){numOfAlbum = 6}
-        else if(numOfAlbum > 6 ){numOfAlbum = 1}
+        if(numOfAlbum < 1){numOfAlbum = 5}
+        else if(numOfAlbum > 5 ){numOfAlbum = 1}
         showHidden(numOfAlbum);
     }
     function showOnModal(element){
@@ -236,6 +257,24 @@
           else{
             hidden.className = hidden.className.replace(' w3-show','');
             btn.innerText = "show more";
+          }
+        }
+        function closeMe(){
+          document.getElementById('sideBar').style.display = "none";
+          document.getElementById('topBar').style.display = "block";
+
+          let elem = document.getElementsByClassName('moveLR');
+          for(let i = 0;i<elem.length;i++){
+            elem[i].style.marginLeft = "0%"
+          }
+        }
+
+        function openMe(){
+          document.getElementById('topBar').style.display = "none";
+          document.getElementById('sideBar').style.display = "block";
+           let elem = document.getElementsByClassName('moveLR');
+          for(let i = 0;i<elem.length;i++){
+            elem[i].style.marginLeft = "20.3%"
           }
         }
     </script>
