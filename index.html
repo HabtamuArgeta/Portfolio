@@ -22,7 +22,7 @@
           }
         }
         #chargeTable table th,#chargeTable table td{text-align: center;}
-        #chargeTable table{opacity: 0.5;}#chargeTable table:hover{opacity: 1;}
+        #chargeTable table, .animateOpcty{opacity: 0.5;}#chargeTable table:hover , .animateOpcty:hover{opacity: 1;}
     </style>
  </head>
  <body> 
@@ -167,9 +167,79 @@
      </div>
       
      <a id="goToProject"></a>
-     <div>
+     <div class="w3-center w3-wide w3-xxlarge w3-margin-top">Projects</div><br>
+     <div class="w3-row-padding w3-white">
+      <div class="w3-col l6 m6 w3-container w3-margin-top">
+        <div class="animateOpcty w3-margin-bottom w3-center w3-card w3-display-container">
+          <span class="w3-badge w3-display-topleft">1</span>
+          <a href="https://github.com/HabtamuArgeta/ETHIOPIAN-UNIVERSITY-EXIT-EXAM-QUESTIONS-PROVIDER-PLATFORM/tree/master" target="_blank" >
+           <img src="./IMAGES/2023-09-26 18-30-00-27.png" width="80%">
+          </a>
+          <div class="w3-content w3-justify">
+            This is EUEEP web site that we have developed for third year <em>web programming project.</em>
+            You can get the source code on github simply by clicking the the image above.
+          </div>
+        </div>
 
-     </div>
+         <div class="animateOpcty w3-margin-bottom w3-center w3-card w3-display-container" style="padding-bottom: 47px;">
+          <span class="w3-badge w3-display-topleft">3</span>
+          <a href="sheger.html" target="_blank" >
+           <img src="./IMAGES/2023-09-26 11-19-47-57.png" width="80%">
+          </a>
+           <div class="w3-content w3-justify">
+            This is web site being created for sheger city in <em>Ethiopia</em>.
+            To fully  access the source code you need to have access right.This is only for security of the client.
+          </div>
+        </div>
+
+         <div class="animateOpcty w3-margin-bottom w3-center w3-card hiddenProj w3-display-container" style="display: none;">
+          <a href="https://github.com/HabtamuArgeta/My-Portfolio" target="_blank" >
+            <span class="w3-badge w3-display-topleft">5</span>
+           <img src="./IMAGES/2023-09-26 10-47-46-88.png" width="80%">
+          </a>
+          <div class="w3-content w3-justify">
+            I have includede this project to provide you a source code incase you need and 
+            to show as i have developed it.You can get the source code on github simply by clicking the image above.
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l6 m6 w3-container  w3-margin-top">
+        <div class="animateOpcty w3-margin-bottom w3-center w3-card w3-display-container">
+          <span class="w3-badge w3-display-topleft">2</span>
+          <a href="https://github.com/HabtamuArgeta/School-managment-system" target="_blank">
+            <img src="./IMAGES/2023-09-26 17-07-11-98.png" width="80%">
+          </a>
+          <div class="w3-content w3-justify">
+            This is SMS web site that i develope for may client <em>Fikadu</em>.
+            You can get the source code on github simply by clicking  the image above.
+          </div>
+        </div>
+
+        <div class="animateOpcty w3-margin-bottom w3-center w3-card w3-display-container">
+          <span class="w3-badge w3-display-topleft">4</span>
+          <a href="https://github.com/HabtamuArgeta/STUDENT-RECORD-MANAGEMENT-SYSTEM" target="_blank">
+            <img src="./IMAGES/2023-05-22 10-05-04-66.png" width="80%">
+          </a>
+           <div class="w3-content w3-justify">
+            This is <em>STUDENT RECORD MANAGMENT SYSTEM</em> that i have developed by using c++ and  linked list DSA.
+            It run on console mode, by setting it's environment you can test this amazing project.
+            You can get the source code on github simply by clicking  the image above.
+          </div>
+        </div>
+
+        <div class="animateOpcty w3-margin-bottom w3-center w3-card hiddenProj w3-display-container" style="display: none;">
+          <span class="w3-badge w3-display-topleft">6</span>
+          <a href="https://github.com/HabtamuArgeta/My-Resum" target="_blank">
+            <img src="./IMAGES/2023-09-27 07-04-18-98.png" width="80%">
+          </a>
+          <div class="w3-content w3-justify" style="padding-bottom: 20px;">
+            This is my alternative resume(<a href="https://habtamuargeta.github.io/My-Resum/" target="_blank">habtamu.com</a>)
+            You can get the source code on github simply by clicking  the image above.
+          </div>
+        </div>
+      </div> 
+   </div>
+   <div class="w3-white"><button class="w3-button w3-pale-green w3-round-medium" onclick="togglePro()" id="togglepro" style="padding: 7px;margin: 3px;">show more</button></div>
 
      <a id="goToContact"></a>
      <div class="w3-center w3-margin-top w3-margin-bottom">
@@ -258,6 +328,20 @@
             hidden.className = hidden.className.replace(' w3-show','');
             btn.innerText = "show more";
           }
+        }
+        function togglePro(){
+          let hidden = document.getElementsByClassName('hiddenProj');
+          let btn = document.getElementById('togglepro');
+          for(let i=0;i<hidden.length;i++){
+           if(hidden[i].className.indexOf('w3-show') == -1){
+              hidden[i].className += ' w3-show';
+              btn.innerText = "show less";
+             }
+           else{
+              hidden[i].className = hidden[i].className.replace(' w3-show','');
+              btn.innerText = "show more";
+             }
+           }
         }
         function closeMe(){
           document.getElementById('sideBar').style.display = "none";
